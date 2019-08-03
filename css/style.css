@@ -1,0 +1,305 @@
+body {
+    font-family: sans-serif;
+    font-size: 17px;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*********************************************************
+global
+*********************************************************/
+
+.container {
+    margin: auto;
+}
+
+.primary-text {
+    color: #56a79a;
+}
+
+.primary-background {
+    background-color: #56a79a;
+}
+
+
+/* header*/
+
+#main-header {
+    border-bottom: 1px solid #56a79a;
+}
+
+#main-header h1 {
+    font-size: 33px;
+}
+
+
+/* nav bar */
+
+#navbar {
+    text-transform: uppercase;
+}
+
+#navbar ul {
+    padding: 0 0 0 20px;
+}
+
+#navbar li {
+    display: inline;
+    padding-right: 20px;
+    list-style: none;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: #888;
+}
+
+#navbar .current a,
+#navbar a:hover {
+    color: #56a79a;
+    border-bottom: 3px solid #56a79a;
+    padding-bottom: 3px;
+}
+
+
+/* company */
+
+#company {
+    background: #333;
+    padding: 10px 0;
+    color: #fff;
+}
+
+#company h4 {
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+#company ul {
+    padding: 0;
+    list-style: none;
+    line-height: 2em;
+}
+
+#company input[type="email"] {
+    padding: 7px;
+}
+
+#company button {
+    background: #222;
+    padding: 10px;
+    border: 0;
+    color: #fff;
+}
+
+
+/* footer */
+
+#main-footer {
+    background: #56a79a;
+    color: #fff;
+}
+
+
+/* sub headerr*/
+
+#subheader h1 {
+    padding-left: 18px;
+}
+
+
+/*page*/
+
+#page {
+    margin-bottom: 40px;
+}
+
+
+/**********************************************************
+Home Page
+*********************************************************/
+
+
+/*show case*/
+
+#showcase {
+    background: url("https://cdn.pixabay.com/photo/2015/01/21/14/14/imac-606765_960_720.jpg") no-repeat center center;
+    border-bottom: 3px solid #56a79a;
+    margin-bottom: 30px;
+    background-size: cover;
+}
+
+#showcase .row {
+    height: 600px;
+}
+
+#showcase h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+#showcase p {
+    color: #ccc;
+    margin: 0;
+}
+
+#showcase .showcase-content {
+    width: 200px;
+    background: #333;
+    color: #fff;
+    border-radius: 90px;
+    padding: 40px;
+    opacity: 0.9;
+}
+
+
+/* features */
+
+#features h2 {
+    font-size: 35px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+#features p {
+    color: #888;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+#features .fa,
+#features .fas,
+#features .far {
+    font-size: 60px;
+    color: #56a79a;
+}
+
+
+/* infor section */
+
+#info {
+    background: #333 url("https://cdn.pixabay.com/photo/2018/07/10/07/56/business-3528035_960_720.jpg") no-repeat center center;
+    background-size: cover;
+    font-weight: bold;
+    padding: 35px;
+}
+
+#info h2 {
+    font-size: 35px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+#info ul {
+    list-style: none;
+    padding: 0;
+}
+
+#info li {
+    line-height: 2em;
+    font-size: 20px;
+}
+
+
+/*********************************************************
+Services
+*********************************************************/
+
+.services ul {
+    padding: 0;
+    list-style: none;
+}
+
+.services ul li {
+    padding: 10px;
+}
+
+.services ul li:nth-child(odd) {
+    background: #333;
+    color: #fff;
+}
+
+.services ul li:nth-child(even) {
+    background: #56a79a;
+}
+
+
+/********************************************************
+Contact
+********************************************************/
+
+.contact form {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"] {
+    width: 50%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.contact form textarea {
+    width: 50%;
+    height: 100px;
+}
+
+.contact form button {
+    width: 50%;
+    padding: 10px 0;
+    border: 0;
+    background: #56a79a;
+    color: #fff;
+}
+
+.contact form label {
+    text-transform: uppercase;
+}
+
+
+/*********************************************************
+Responsive
+*********************************************************/
+
+@media screen and (max-width:800px) {
+    /* global */
+    #main-header nav {
+        font-size: 15px;
+    }
+    #navbar nav {
+        text-align: center;
+    }
+    #subheader h1 {
+        padding-left: 0px;
+    }
+    /* showcase */
+    #showcase h1 {
+        font-size: 25px;
+    }
+    /* contact form*/
+    .contact form input[type="text"],
+    .contact form input[type="email"],
+    .contact form textarea,
+    .contact form button {
+        width: 80%;
+    }
+    .contact form textarea {
+        height: 60px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    /* showcase */
+    #showcase,
+    .showcase-content {
+        padding: 10px;
+    }
+    /* infor section*/
+    #info img {
+        width: 150px !important;
+    }
+}
